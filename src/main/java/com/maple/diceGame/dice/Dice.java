@@ -1,9 +1,9 @@
-package com.maple.diceGame;
+package com.maple.diceGame.dice;
 
 public class Dice {
 
-	public int draw(String mode) {
-		
+	public int draw() {
+
 		return (int) (Math.random() * 1000) % 6 + 1;// 1~6
 	}
 }
