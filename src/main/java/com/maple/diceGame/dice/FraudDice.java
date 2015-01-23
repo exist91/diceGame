@@ -1,6 +1,5 @@
 package com.maple.diceGame.dice;
 
-
 public class FraudDice extends Dice {
 
 	private String mode;
@@ -18,7 +17,6 @@ public class FraudDice extends Dice {
 	}
 
 	public int draw(String mode) {
-		
 		switch (mode) {
 		case "일반": {
 			return super.draw();

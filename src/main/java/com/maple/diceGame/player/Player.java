@@ -10,28 +10,27 @@ public class Player {
 	public Player(String name) {
 		this.name = name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setTotalScore(int totalScore) {
 		this.totalScore = totalScore;
 	}
-	
+
 	public int getTotalScore() {
 		return totalScore;
 	}
-	
-	public int throwDice()
-	{
+
+	public int throwDice() {
 		Dice dice = new Dice();
-		
+
 		return dice.draw();
 	}
-	
+
 }
