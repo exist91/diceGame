@@ -3,7 +3,7 @@ package com.maple.diceGame.dice;
 public class FraudDice extends Dice {
 
 	private String mode;
-
+	
 	public FraudDice() {
 		this.mode = "일반";
 	}

@@ -6,9 +6,11 @@ public class Player {
 
 	private String name;
 	private int totalScore;
+	private Dice dice;
 
 	public Player(String name) {
 		this.name = name;
+		dice = new Dice();
 	}
 
 	public void setName(String name) {
@@ -27,8 +29,12 @@ public class Player {
 		return totalScore;
 	}
 
+	public String getFraudDiceMode()
+	{
+		return null;
+	}
+	
 	public int throwDice() {
-		Dice dice = new Dice();
 
 		return dice.draw();
 	}

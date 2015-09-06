@@ -13,7 +13,7 @@ public class GameMain {
 		Judge judge = new Judge(recoder, 5);
 		
 		Player playerA = new Player("김형종");
-		FraudPlayer playerB = new FraudPlayer("아이유", playerA);
+		FraudPlayer playerB = new FraudPlayer("김주연", playerA);
 		
 		judge.registerPlayer(playerA);
 		judge.registerPlayer(playerB);

@@ -5,22 +5,28 @@ import com.maple.diceGame.dice.FraudDice;
 public class FraudPlayer extends Player {
 
 	private Player enermy;
-
+	private FraudDice fraudDice;
+	
 	public FraudPlayer(String name, Player enermy) {
 		super(name);
 		this.enermy = enermy;
+		fraudDice = new FraudDice();
 	}
 
+	public String getFraudDiceMode()
+	{
+		return fraudDice.getMode();
+	}
+	
 	@Override
 	public int throwDice() {
-		FraudDice fDice = new FraudDice();
-
+		
 		if (this.getTotalScore() - enermy.getTotalScore() >= 6) {
-			return fDice.draw("약함");
+			return fraudDice.draw("약함");
 		} else if (this.getTotalScore() - enermy.getTotalScore() < 0) {
-			return fDice.draw("강함");
+			return fraudDice.draw("강함");
 		} else {
-			return fDice.draw();
+			return fraudDice.draw();
 		}
 	}
 }
